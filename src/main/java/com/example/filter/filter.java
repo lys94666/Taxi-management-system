@@ -26,7 +26,7 @@ public class filter implements Filter {
         res.setHeader("Access-Control-Allow-Credentials", "true");
         res.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
         res.setHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-        res.addHeader("Access-Control-Allow-Methods", "*");
+        res.addHeader("Access-Control-Allow-Methods", "*,DELETE");
         String requestURI = request.getRequestURI();
         HttpSession httpSession = request.getSession(false);
         String[] matcher = new String[]{
